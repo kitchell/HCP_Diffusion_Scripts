@@ -17,7 +17,7 @@ For the HCP data it has already undergone the FSL preprocessing steps necessary.
 you can do ACPC alignment, shell splitting, and dtiInit via command line or in matlab
 - command line: **HCP_run_dtiInit.sh**
   - this just runs the matlab script via command line
-  - edit the script to have the correct file paths then run by typing
+  - edit the script to have the correct file paths etc. then run by typing
   * ```./HCP_run_dtiInit.sh 'subjectnumber'```
 - matlab: **HCP_run_dtiInit.m**
 
@@ -35,3 +35,10 @@ once the ACPC alignment happens you can send the T1 image to freesurfer
   
 This will create a folder called freesurfer with all the freesurfer output in the anatomy folder of the subject
   
+# 3. HCP_create_wm_mask.sh
+This script will create the white matter mask needed for ensemble tractography. It calls a matlab script called HCP_fs_make_wm_mask.m. It will create a file called wm_mask.nii.gz in the anatomy folder of the subject.
+- command line: HCP_create_wm_mask.sh
+  - edit the script to have the correct file paths
+  - it will take one input
+    - subj: 'subjnum'
+  - type ```./HCP_create_wm_mash.sh 'subjnum'```
