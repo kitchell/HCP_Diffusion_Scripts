@@ -20,6 +20,7 @@ you can do ACPC alignment, shell splitting, and dtiInit via command line or in m
   - edit the script to have the correct subj number and file paths then run by typing
   * ./HCP_run_dtiInit.sh
 - matlab: **HCP_run_dtiInit.m**
+
 This requires the following arguments:
   - baseDir: string of the base directory for the subject folder
   - subj: string of the subject folder name/number
