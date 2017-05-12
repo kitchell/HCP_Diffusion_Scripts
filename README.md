@@ -37,8 +37,12 @@ This will create a folder called freesurfer with all the freesurfer output in th
   
 # 3. HCP_create_wm_mask.sh
 This script will create the white matter mask needed for ensemble tractography. It calls a matlab script called HCP_fs_make_wm_mask.m. It will create a file called wm_mask.nii.gz in the anatomy folder of the subject.
-- command line: HCP_create_wm_mask.sh
+- command line: **HCP_create_wm_mask.sh**
   - edit the script to have the correct file paths
   - it will take one input
     - subj: 'subjnum'
   - type ```./HCP_create_wm_mash.sh 'subjnum'```
+
+# 4. HCP_mrtrix_ensemble.sh
+This script takes an input of the subject number and performs ensemble tractography for a single subject
+**make this a qsub thing**
