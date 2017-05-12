@@ -13,12 +13,12 @@ If it does not then you may need to edit the first script for the correct folder
 
 For the HCP data it has already undergone the FSL preprocessing steps necessary. So the first step will be to align the T1 data to ACPC, split the shells, and run dtiInit. 
 
-# 1. HCP_run_dtiInit.m
+# 1. HCP_run_dtiInit
 you can do ACPC alignment, shell splitting, and dtiInit via command line or in matlab
 - command line: **HCP_run_dtiInit.sh**
   - this just runs the matlab script via command line
-  - edit the script to have the correct subj number and file paths then run by typing
-  * ./HCP_run_dtiInit.sh
+  - edit the script to have the correct file paths then run by typing
+  * ```./HCP_run_dtiInit.sh 'subjectnumber'```
 - matlab: **HCP_run_dtiInit.m**
 
 This requires the following arguments:
@@ -27,5 +27,11 @@ This requires the following arguments:
   - shell: shell you want to work on 
   - xflip: true/false if you want to flip the x bvecs (you want it to be true)
 
-# 2. Freesurfer
-once the 
+# 2. HCP_run_freesurfer.pbs
+once the ACPC alignment happens you can send the T1 image to freesurfer
+- qsub: **HCP_run_freesurfer.pbs**
+  - edit the shell script to have the right subject number
+  - type ```qsub HCP_run_freesurfer.pbs```
+  
+This will create a folder called freesurfer with all the freesurfer output in the anatomy folder of the subject
+  
