@@ -8,12 +8,11 @@ subj=$1
 datadir="/N/dc2/projects/lifebid/wm_morphology/HCP_3T_test"
 
 ##load freesurfer
-module unload freesurfer/5.3.0
 module load freesurfer/6.0.0
 
 
 #setup freesurfer
-export SUBJECTS_DIR=$datadir/$subj/anatomy
+export SUBJECTS_DIR=$projdir/$subj/anatomy
 source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
 cd $SUBJECTS_DIR/freesurfer/mri
