@@ -28,6 +28,7 @@ cd $datadir
 
 module load matlab
 
-matlab -nodesktop -nodisplay -nosplash -r "HCP_fs_make_wm_mask('$subj')";exit;
+matlab -nodesktop -nodisplay -nosplash -r "HCP_fs_make_wm_mask('$subj')";
+exit
 
 

@@ -1,0 +1,12 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=16
+#PBS -l walltime=3:00:00
+#PBS -N 100307en
+#PBS -o 100307en.output
+#PBS -e 100307en.error
+#PBS -m abe
+#PBS -M kitchell@indiana.edu
+
+cd /N/dc2/projects/lifebid/code/kitchell/HCP_Diffusion_Scripts
+
+./HCP_mrtrix_ensemble 100307
