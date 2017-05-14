@@ -35,3 +35,4 @@ niftiWrite(wm);
 
 
 end % Main function
+exit
