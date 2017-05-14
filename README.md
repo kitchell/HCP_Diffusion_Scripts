@@ -43,6 +43,11 @@ This script will create the white matter mask needed for ensemble tractography. 
     - subj: 'subjnum'
   - type ```./HCP_create_wm_mash.sh 'subjnum'```
 
-# 4. HCP_mrtrix_ensemble.sh
-This script takes an input of the subject number and performs ensemble tractography for a single subject
-**make this a qsub thing**
+# 4. HCP_run_ensemble.pbs
+This script will send the script **HCP_mrtrix_ensemble.sh** to the queue on karst to perform ensemble tractography for a single subject
+- command line: **HCP_run_ensemble.pbs**
+  - edit the script to have the correct subject number
+  - it will qsub **HCP_mrtrix_ensemble.sh**
+    - edit that file to have the correct file paths if necessary
+  - type ```qsub HCP_run_ensemble.pbs```
+
