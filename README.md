@@ -66,3 +66,9 @@ This script will run life on the ensemble connectome file
   - takes the input of subj and bval shell (currently unused)
   - type ```HCP_life('subj', 'bval')```
   
+# 7. HCP_AFQ_segmentation.m
+This script will do the AFQ segmentation of major fiber tracts using the life connectome file
+- matlab: **HCP_AFQ_segmentation.m**
+  - edit for file structures and bvals
+  - take the input of subj name
+  - type ```HCP_AFQ_segmentation('100307')
