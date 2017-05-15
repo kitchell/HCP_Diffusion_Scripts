@@ -17,7 +17,7 @@ TOPDIR=/N/dc2/projects/lifebid/wm_morphology/HCP_3T_test/$SUBJ
 
 ## STN96 dataset
 ANATDIR=$TOPDIR/anatomy/
-OUTDIR=$TOPDIR/tractograpy
+OUTDIR=$TOPDIR/tractography
 
 ## mkdir -v $OUTDIR
 
