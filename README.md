@@ -51,3 +51,12 @@ This script will send the script **HCP_mrtrix_ensemble.sh** to the queue on kars
     - edit that file to have the correct file paths if necessary
   - type ```qsub HCP_run_ensemble.pbs```
 
+# 5. HCP_ensemble_connectome_generator.m
+This script will combine the ensemble results into one connectome file
+-matlab: **HCP_ensemble_connectome_generator.m**
+  - edit to have the right folder paths
+  - it will create a folder called major_tracts in the subject's folder
+  - take the input of subj and bval shell
+  - type ```HCP_ensembled_connectome_generator('1003007', '1000')```
+  
+ 
