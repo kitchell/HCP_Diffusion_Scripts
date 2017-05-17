@@ -13,14 +13,11 @@ t1file = fullfile(projdir, subj, '/anatomy/T1w_acpc_dc_restore_1p25_AUTO.nii.gz'
 T1 = niftiRead(t1file);
 
 load(fullfile(projdir, subj, '/major_tracts/life/clean_postlife_afq_fg.mat'));
-% load(fullfile(projdir, subj, '/major_tracts/life/postlife_afq_fg.mat'));
-% fg_clean = fg_classified;
-
 
 mkdir(fullfile(projdir, subj, '/major_tracts/volumes'));
 
 thresholdPercent = 20;
-%islandFlag       = false;
+islandFlag       = false;
 smoothKernel     = [3 3 3];
 
 for ifg=1:length(fg_clean)
