@@ -70,5 +70,24 @@ This script will run life on the ensemble connectome file
 This script will do the AFQ segmentation of major fiber tracts using the life connectome file
 - matlab: **HCP_AFQ_segmentation.m**
   - edit for file structures and bvals
-  - take the input of subj name
-  - type ```HCP_AFQ_segmentation('100307')
+  - takes the input of subj name
+  - type ```HCP_AFQ_segmentation('100307')```
+  
+# 8. HCP_AFQ_clean.m
+This script will remove the outlying fibers from the AFQ segmentation
+- matlab: **HCP_AFQ_clean.m**
+  - edit for file paths if necessary
+  - change params if necessary
+  - takes the input of subj name
+  - type ```HCP_AFQ_clean('100307')```
+  
+# 9. HCP_generate_tract_masks.m
+This script will create binary volumes for all the AFQ segmented tracts.
+- matlab: **HCP_generate_tract_masks.m**
+  - edit for file paths if necessary
+  - takes the input of subj, voxelResize, threshold, smoothBool
+  - it will read the cleaned AFQ segmentation and the acpc T1 image
+  - typical params are: voxelResize = .7, threshold = 2, smoothBool = 1
+  - type ```HCP_generate_tract_masks('100307', .7, 2, 1)```
+  
+
