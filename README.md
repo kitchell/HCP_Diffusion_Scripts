@@ -90,4 +90,6 @@ This script will create binary volumes for all the AFQ segmented tracts.
   - typical params are: voxelResize = .7, threshold = 2, smoothBool = 1
   - type ```HCP_generate_tract_masks('100307', .7, 2, 1)```
   
-
+# 10. niftiMask2Surface.py
+This script will create a surface file in the .ply format that will be usable for shapeDNA
+It is a python function, so I still need to figure out how to run that on karst etc. 
