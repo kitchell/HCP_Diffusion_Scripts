@@ -1,12 +1,12 @@
 #!/bin/bash
 #PBS -l nodes=1:ppn=16
 #PBS -l walltime=3:00:00
-#PBS -N 125525en
-#PBS -o 125525en.output
-#PBS -e 125525en.error
+#PBS -N 133928en
+#PBS -o 133928en.output
+#PBS -e 133928en.error
 #PBS -m abe
 #PBS -M kitchell@indiana.edu
 
 cd /N/dc2/projects/lifebid/code/kitchell/HCP_Diffusion_Scripts
 
-./HCP_mrtrix_ensemble.sh 125525
+./HCP_mrtrix_ensemble.sh 133928
