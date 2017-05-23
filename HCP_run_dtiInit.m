@@ -120,7 +120,7 @@ index0    = (bvals.valnorm == params.single_shells(1));
 % Find all indices to each bvalue and B0
 all_1000  = or(index1000,index0);
 all_2000  = or(index2000,index0);
-all_3000  = or(index2000,index0);
+all_3000  = or(index3000,index0);
 
 % Validate that we selected the correct number of bvals+b0
 assertEqual(sum(all_1000), sum(index0)+sum(index1000))
